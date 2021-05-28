@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MBSApiAutomation" verbose="10" parallel="false">
+
+<parameter name="ExecutionByXML" value="false" />
+<parameter name="Browser" value="Chrome" /> 
+<!-- <parameter name="URL" value="https://dev.my.matchbookservices.com/CleanseMatch/V1.0/" />  -->
+
+
+
+	<test name="Generate Token">
+			<classes>
+				<class name="com.MBS.CleanseMatchData.GetTokenTest">
+					<methods>
+					<include name="generateToken">
+						</include>
+					</methods>
+				</class>
+			</classes>
+		</test>
+</suite>

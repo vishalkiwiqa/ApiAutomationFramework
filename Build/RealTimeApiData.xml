@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MBSApiAutomation" verbose="10" parallel="false">
+
+	<parameter name="ExecutionByXML" value="false" />
+	<parameter name="Browser" value="Chrome" />
+	<parameter name="URL" value="https://mb-qa1.my.matchbookservices.com/" />
+	
+	<listeners>
+	<listener class-name="com.MBS.Utility.CustomDetailReporter" />
+	<listener class-name="com.MBS.Utility.CustomReporterBuildSummary" />
+	<listener class-name="com.MBS.Utility.CustomReporter" />
+	</listeners>
+
+	<test name="Login_Do Login">
+		<classes>
+			<class name="com.MBS.Login.LoginIndex">
+				<methods>
+					<include name="loginandlogout">
+					<parameter name="loginId" value="vishal.sinha@kiwiqa.com" />
+					<parameter name="password" value="Baps@200" />
+					<parameter name="SecurityAnswer" value="pet" />
+					<parameter name="DashboardUserName" value="Vishal" />
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="DataStewardship_Get Api Key and Api Secret and SubDomain">
+		<classes>
+			<class name="com.MBS.DataStewardship.RealTimeApisIndex">
+				<methods>
+					<include name="getApiKey_SecretKey_DomainName">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="CleanseMatchData_Generate Token">
+		<classes>
+			<class name="com.MBS.CleanseMatchData.GetTokenTest">
+				<methods>
+					<include name="generateToken">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="CleanseMatch Test_Call">
+		<classes>
+			<class name="com.MBS.CleanseMatchData.CleanseMatchTest">
+				<methods>
+					<include name="createCleanseMatchData">
+						<parameter name="SrcRecordId" value="001000153" />		<!-- 001000153;001000152 -->
+						<parameter name="CompanyName" value="Apple" />			<!-- Apple;DELL -->
+						<parameter name="Address" value="" />					<!-- 1 DELL WAY -->
+						<parameter name="Address2" value="" />
+						<parameter name="City" value="" />						<!-- ROUND ROCK -->
+						<parameter name="State" value="CA" />						<!-- CA;TX -->
+						<parameter name="PostalCode" value="" />
+						<parameter name="Country" value="US" />
+						<parameter name="PhoneNbr" value="" />
+						<parameter name="Tags" value="[SRC::crm]" />  			<!-- [SRC::crm] -->
+						<parameter name="DnBDUNSNumber" value="" />
+						<parameter name="UserName" value="INTERACTIVE_USER" />			<!--INTERACTIVE_USER;Vishal Sinha  -->
+						<parameter name="InLanguage" value="" />
+						<parameter name="MaxCandidateCount" value="" />
+						<parameter name="InpDUNS" value="" />
+						<parameter name="RegistrationNumber" value="" />
+						<parameter name="RegistrationNumberType" value="" />
+						<parameter name="Domain" value="" />
+						<parameter name="Email" value="" />
+						<parameter name="ValueToCheckFromJson"
+							value="DnBDUNSNumber" />
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="DataStewardship_RealTimeApisIndex_Add Filters Match Data">
+		<classes>
+			<class name="com.MBS.DataStewardship.RealTimeApisIndex">
+				<methods>
+					<include name="verifyResponseWithMatchResult">
+					<parameter name="SrcIdValue" value="001000153" />
+					<parameter name="UserName" value="Vishal Sinha" />					<!-- Vishal Sinha -->
+					<parameter name="Tags" value="[SRC::crm]" />			<!-- [SRC::crm] -->
+					<parameter name="DnBDUNSNumber" value="" />
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="DataStewardship_Refresh DUNS Number">
+		<classes>
+			<class name="com.MBS.DataStewardship.RealTimeApisIndex">
+				<methods>
+					<include name="refreshDunsNumber">
+					<parameter name="Country" value="US" />
+					<parameter name="Tags" value="[SRC::crm]" />			<!-- [SRC::crm] -->
+					<parameter name="DnBDUNSNumber" value="114315195" />
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Import_Data Upload Data">
+		<classes>
+			<class name="com.MBS.DataStewardship.RealTimeApisIndex">
+				<methods>
+					<include name="uploadData">
+					<parameter name="UploadJsonFile" value="UploadFile.json" />	
+					<parameter name="TotalRecords" value="2" />			
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Login_Do Logout">
+		<classes>
+			<class name="com.MBS.Login.LoginIndex">
+				<methods>
+					<include name="logout">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

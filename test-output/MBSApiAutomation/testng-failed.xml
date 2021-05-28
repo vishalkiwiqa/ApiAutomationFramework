@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" name="Failed suite [MBSApiAutomation]" guice-stage="DEVELOPMENT" verbose="10">
+  <parameter name="ExecutionByXML" value="true"/>
+  <parameter name="URL" value="https://dev.my.matchbookservices.com/"/>
+  <parameter name="Browser" value="Chrome"/>
+  <test name="Import_Data Upload Data(failed)" verbose="10">
+    <classes>
+      <class name="com.MBS.DataStewardship.RealTimeApisIndex">
+        <methods>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuite"/>
+          <include name="postConfigue"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="uploadData" invocation-numbers="0">
+            <parameter name="TotalRecords" value="3"/>
+            <parameter name="UploadJsonFile" value="UploadFile.json"/>
+          </include> <!-- uploadData -->
+        </methods>
+      </class> <!-- com.MBS.DataStewardship.RealTimeApisIndex -->
+    </classes>
+  </test> <!-- Import_Data Upload Data(failed) -->
+</suite> <!-- Failed suite [MBSApiAutomation] -->

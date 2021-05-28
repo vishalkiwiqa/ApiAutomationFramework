@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="6" total="9" passed="3" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Open URL : https://dev.my.matchbookservices.com/</br>]]>
+    </line>
+    <line>
+      <![CDATA[Do login with valid email and password.</br>]]>
+    </line>
+    <line>
+      <![CDATA[Entered Email: dharmesh.patel@kiwiqa.com</br>]]>
+    </line>
+    <line>
+      <![CDATA[Entered Password: dharmesh.patel@1234</br>]]>
+    </line>
+    <line>
+      <![CDATA[Enter Security Answer and click on Submit</br>]]>
+    </line>
+    <line>
+      <![CDATA[Entered Security Answer: pet</br>]]>
+    </line>
+    <line>
+      <![CDATA[ Verify Dharmesh is redirected to Dashboard Page <Strong><font color=#008000>Pass</font></strong></br>]]>
+    </line>
+    <line>
+      <![CDATA[Click on Dashboard-Portal from Left side Menu</br>]]>
+    </line>
+    <line>
+      <![CDATA[Click on Active Data Queue Statistics </br>]]>
+    </line>
+    <line>
+      <![CDATA[Go to Logout Icon.</br>]]>
+    </line>
+    <line>
+      <![CDATA[Click on Logout Button.</br>]]>
+    </line>
+    <line>
+      <![CDATA[ Verified that User Logged Out successfully and URL matched : 'https://matchbookservices.com/blog/' or https://www.dnb.com/. <Strong><font color=#008000>Pass</font></strong></br>]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2021-05-08T11:56:57Z" name="MBSApiAutomation" finished-at="2021-05-08T11:58:30Z" duration-ms="93002">
+    <groups>
+    </groups>
+    <test started-at="2021-05-08T11:56:57Z" name="Login_Do Login" finished-at="2021-05-08T11:57:31Z" duration-ms="33984">
+      <class name="com.MBS.Login.LoginIndex">
+        <test-method is-config="true" signature="fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.MBS.Login.LoginIndex@483f6d77]" started-at="2021-05-08T17:26:57Z" name="fetchSuiteConfiguration" finished-at="2021-05-08T17:26:57Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@64e92d61]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchSuiteConfiguration -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:com.MBS.Login.LoginIndex@483f6d77]" started-at="2021-05-08T17:26:57Z" name="setUp" finished-at="2021-05-08T17:27:00Z" duration-ms="2593" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.MBS.Login.LoginIndex.loginandlogout(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@64e92d61]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=loginandlogout status=SUCCESS method=LoginIndex.loginandlogout(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.MBS.Login.LoginIndex@483f6d77] output=Open URL : https://dev.my.matchbookservices.com/</br>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginandlogout(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.MBS.Login.LoginIndex@483f6d77]" started-at="2021-05-08T17:27:00Z" name="loginandlogout" finished-at="2021-05-08T17:27:31Z" duration-ms="31354" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dharmesh.patel@kiwiqa.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dharmesh.patel@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pet]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Dharmesh]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Open URL : https://dev.my.matchbookservices.com/</br>]]>
+            </line>
+            <line>
+              <![CDATA[Do login with valid email and password.</br>]]>
+            </line>
+            <line>
+              <![CDATA[Entered Email: dharmesh.patel@kiwiqa.com</br>]]>
+            </line>
+            <line>
+              <![CDATA[Entered Password: dharmesh.patel@1234</br>]]>
+            </line>
+            <line>
+              <![CDATA[Enter Security Answer and click on Submit</br>]]>
+            </line>
+            <line>
+              <![CDATA[Entered Security Answer: pet</br>]]>
+            </line>
+            <line>
+              <![CDATA[ Verify Dharmesh is redirected to Dashboard Page <Strong><font color=#008000>Pass</font></strong></br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginandlogout -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:com.MBS.Login.LoginIndex@483f6d77]" started-at="2021-05-08T17:27:31Z" name="tearDown" finished-at="2021-05-08T17:27:31Z" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginandlogout status=SUCCESS method=LoginIndex.loginandlogout(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.MBS.Login.LoginIndex@483f6d77] output=Open URL : https://dev.my.matchbookservices.com/</br>]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@64e92d61]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.MBS.Login.LoginIndex -->
+    </test> <!-- Login_Do Login -->
+    <test started-at="2021-05-08T11:57:31Z" name="Import_Data Upload Data" finished-at="2021-05-08T11:58:12Z" duration-ms="41206">
+      <class name="com.MBS.DataStewardship.RealTimeApisIndex">
+        <test-method is-config="true" signature="fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.MBS.DataStewardship.RealTimeApisIndex@5acf93bb]" started-at="2021-05-08T17:27:31Z" name="fetchSuiteConfiguration" finished-at="2021-05-08T17:27:31Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@16fe9c29]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchSuiteConfiguration -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:com.MBS.DataStewardship.RealTimeApisIndex@5acf93bb]" started-at="2021-05-08T17:27:31Z" name="setUp" finished-at="2021-05-08T17:27:36Z" duration-ms="5052" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.MBS.DataStewardship.RealTimeApisIndex.testDara()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@16fe9c29]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=testDara status=SUCCESS method=RealTimeApisIndex.testDara()[pri:0, instance:com.MBS.DataStewardship.RealTimeApisIndex@5acf93bb] output=Click on Dashboard-Portal from Left side Menu</br>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDara()[pri:0, instance:com.MBS.DataStewardship.RealTimeApisIndex@5acf93bb]" started-at="2021-05-08T17:27:36Z" name="testDara" finished-at="2021-05-08T17:28:12Z" duration-ms="36150" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Click on Dashboard-Portal from Left side Menu</br>]]>
+            </line>
+            <line>
+              <![CDATA[Click on Active Data Queue Statistics </br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testDara -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:com.MBS.DataStewardship.RealTimeApisIndex@5acf93bb]" started-at="2021-05-08T17:28:12Z" name="tearDown" finished-at="2021-05-08T17:28:12Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testDara status=SUCCESS method=RealTimeApisIndex.testDara()[pri:0, instance:com.MBS.DataStewardship.RealTimeApisIndex@5acf93bb] output=Click on Dashboard-Portal from Left side Menu</br>]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@16fe9c29]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.MBS.DataStewardship.RealTimeApisIndex -->
+    </test> <!-- Import_Data Upload Data -->
+    <test started-at="2021-05-08T11:58:12Z" name="Login_Do Logout" finished-at="2021-05-08T11:58:30Z" duration-ms="17762">
+      <class name="com.MBS.Login.LoginIndex">
+        <test-method is-config="true" signature="fetchSuite(org.testng.ITestContext)[pri:0, instance:com.MBS.Login.LoginIndex@1af2d44a]" started-at="2021-05-08T17:26:45Z" name="fetchSuite" finished-at="2021-05-08T17:26:57Z" duration-ms="12225" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4e8e8621]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchSuite -->
+        <test-method is-config="true" signature="fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.MBS.Login.LoginIndex@1af2d44a]" started-at="2021-05-08T17:28:12Z" name="fetchSuiteConfiguration" finished-at="2021-05-08T17:28:12Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4e8e8621]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchSuiteConfiguration -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:com.MBS.Login.LoginIndex@1af2d44a]" started-at="2021-05-08T17:28:12Z" name="setUp" finished-at="2021-05-08T17:28:17Z" duration-ms="4693" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.MBS.Login.LoginIndex.logout() throws java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@4e8e8621]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=logout status=SUCCESS method=LoginIndex.logout()[pri:0, instance:com.MBS.Login.LoginIndex@1af2d44a] output=Go to Logout Icon.</br>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logout()[pri:0, instance:com.MBS.Login.LoginIndex@1af2d44a]" started-at="2021-05-08T17:28:17Z" name="logout" finished-at="2021-05-08T17:28:30Z" duration-ms="13063" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Go to Logout Icon.</br>]]>
+            </line>
+            <line>
+              <![CDATA[Click on Logout Button.</br>]]>
+            </line>
+            <line>
+              <![CDATA[ Verified that User Logged Out successfully and URL matched : 'https://matchbookservices.com/blog/' or https://www.dnb.com/. <Strong><font color=#008000>Pass</font></strong></br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:com.MBS.Login.LoginIndex@1af2d44a]" started-at="2021-05-08T17:28:30Z" name="tearDown" finished-at="2021-05-08T17:28:30Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=logout status=SUCCESS method=LoginIndex.logout()[pri:0, instance:com.MBS.Login.LoginIndex@1af2d44a] output=Go to Logout Icon.</br>]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@4e8e8621]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="postConfigue()[pri:0, instance:com.MBS.Login.LoginIndex@1af2d44a]" started-at="2021-05-08T17:28:30Z" name="postConfigue" finished-at="2021-05-08T17:28:34Z" duration-ms="4412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postConfigue -->
+      </class> <!-- com.MBS.Login.LoginIndex -->
+    </test> <!-- Login_Do Logout -->
+  </suite> <!-- MBSApiAutomation -->
+</testng-results>

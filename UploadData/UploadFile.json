@@ -1,0 +1,47 @@
+{"finalize": true,
+    "importDataList": [
+        {
+            "AltCompanyName": "",
+            "City": "",
+            "CompanyName": "DELL",
+            "Country": "USA",
+            "PhoneNbr": "",
+            "Postal Code": "CA",
+            "RegistrationNbr": "",
+            "SrcRecordId": "1123123",
+            "State": "",
+            "StreetAddressLine1": "",
+            "Tags": "",
+            "inLanguage": "en-US"
+        },
+        {
+            "AltCompanyName": "",
+            "City": "",
+            "CompanyName": "DELL1",
+            "Country": "USA",
+            "PhoneNbr": "",
+            "Postal Code": "CA",
+            "RegistrationNbr": "",
+            "SrcRecordId": "112123123",
+            "State": "",
+            "StreetAddressLine1": "",
+            "Tags": "",
+            "inLanguage": "en-US"
+        },
+         {
+            "AltCompanyName": "",
+            "City": "",
+            "CompanyName": "DELL1",
+            "Country": "USA",
+            "PhoneNbr": "",
+            "Postal Code": "CA",
+            "RegistrationNbr": "",
+            "SrcRecordId": "112323123",
+            "State": "",
+            "StreetAddressLine1": "",
+            "Tags": "",
+            "inLanguage": "en-US"
+        }
+    ],
+    "sourceName": "APINEW4"
+}

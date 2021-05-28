@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MBSApiAutomation" verbose="10" parallel="false">
+
+	<parameter name="ExecutionByXML" value="true" />
+	<parameter name="URL"
+		value="https://dev.my.matchbookservices.com/GetToken" />
+
+	<test name="Login Test">
+		<classes>
+			<class name="com.MBS.CleanseMatchData.LoginTest">
+				<methods>
+					<include name="doLogin">
+						<parameter name="subDomain" value="mb-qa1" />
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Get Token Test">
+		<classes>
+			<class name="com.MBS.Login.GetTokenTest">
+				<methods>
+					<include name="generateToken">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

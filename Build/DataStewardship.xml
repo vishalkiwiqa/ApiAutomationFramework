@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MBSApiAutomation" verbose="10" parallel="false">
+
+	<parameter name="ExecutionByXML" value="false" />
+	<parameter name="Browser" value="Chrome" />
+	<!-- <parameter name="URL" value="https://dev.my.matchbookservices.com/CleanseMatch/V1.0/" 
+		/> -->
+
+	<test name="Login_Do Login">
+		<classes>
+			<class name="com.MBS.Login.LoginIndex">
+				<methods>
+					<include name="loginandlogout">
+					<parameter name="loginid" value="vishal.sinha@kiwiqa.com" />
+					<parameter name="password" value="Baps@200" />
+					<parameter name="SecurityAnswer" value="pet" />
+					<parameter name="DashboardUserName" value="Vishal" />
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="DataStewardship_Add Filters Match Data">
+		<classes>
+			<class name="com.MBS.DataStewardship.MatchData.MatchDataIndex">
+				<methods>
+					<include name="verifySrcIdInMatchData">
+						<parameter name="OrderByColoum" value="SrcRecordId" />
+						<parameter name="SelectSrcId" value="SrcRecordId" />
+						<parameter name="SrcIdValue" value="001000152" />
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="DataStewardship_Add Filters Match Data">
+		<classes>
+			<class name="com.MBS.DataStewardship.MatchData.MatchDataIndex">
+				<methods>
+					<include name="previewMatchedData">
+						<parameter name="SelectSrcId" value="SrcRecordId" />
+						<parameter name="SrcIdValue" value="001000152" />
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Login_Do Logout">
+		<classes>
+			<class name="com.MBS.Login.LoginIndex">
+				<methods>
+					<include name="logout">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

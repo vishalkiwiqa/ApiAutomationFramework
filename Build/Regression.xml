@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MBSApiAutomation" verbose="10" parallel="false">
+
+	<parameter name="ExecutionByXML" value="true" />
+	<parameter name="Browser" value="Chrome" />
+	<parameter name="URL" value="https://dev.my.matchbookservices.com/" />
+
+	<test name="Login_Do Login">
+		<classes>
+			<class name="com.MBS.Login.LoginIndex">
+				<methods>
+					<include name="loginandlogout">
+					<parameter name="loginId" value="dharmesh.patel@kiwiqa.com" />
+					<parameter name="password" value="dharmesh.patel@1234" />
+					<parameter name="SecurityAnswer" value="pet" />
+					<parameter name="DashboardUserName" value="Dharmesh" />
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<!-- <test name="DataStewardship_Get Api Key and Api Secret and SubDomain">
+		<classes>
+			<class name="com.MBS.DataStewardship.RealTimeApisIndex">
+				<methods>
+					<include name="getApiKey_SecretKey_DomainName">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="CleanseMatchData_Generate Token">
+		<classes>
+			<class name="com.MBS.CleanseMatchData.GetTokenTest">
+				<methods>
+					<include name="generateToken">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+	<test name="Import_Data Upload Data">
+		<classes>
+			<class name="com.MBS.DataStewardship.RealTimeApisIndex">
+				<methods>
+					<include name="uploadData">
+					<parameter name="UploadJsonFile" value="UploadFile.json" />	
+					<parameter name="TotalRecords" value="3" />		Add Same number of Record as entered in Json File	
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+
+	<test name="Import_Data Upload Data">
+		<classes>
+			<class name="com.MBS.DataStewardship.RealTimeApisIndex">
+				<methods>
+					<include name="testDara">	
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Login_Do Logout">
+		<classes>
+			<class name="com.MBS.Login.LoginIndex">
+				<methods>
+					<include name="logout">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>
